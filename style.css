@@ -24,6 +24,8 @@
 
 
 
+
+/* Noah CSS edits */
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -38,26 +40,62 @@
   flex: 50%;
 }
 
-
-.contact  {
-  flex:50%;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  text-align: center;
-
-}
-
 .about_protrait {
   max-height: 100%;
   max-width: 100%;
 
 }
 
-@media screen and (max-width: 600px) {
+.contact  {
+  flex:50%;
+  flex-direction: column;
+  color: #212529;
+  margin: 25px 50px;
+}
+
+.contact_button {
+  text-align: center;
+  margin: 60px
+}
+
+.carousel-inner{
+
+  width:100%;
+  max-height: 100vh !important;
+}
+
+img.d-block {
+  max-height: 100vh;
+  width:auto !important;
+  height: auto;
+  margin: auto !important;
+}
+.portraiture{
+  display: block;
+  object-fit: cover;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 43% !important;
+  }
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23212529' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23212529' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+@media screen and (max-width: 991px) {
   div.about {
     flex-direction:column;
   }
-  div.about_protrait {
-    flex-direction: column;
+
+  div.contact_button{
+    margin: 40px;
   }
+
+  .carousel-control-next, .carousel-control-prev {
+      width: 35% !important;
+    }
 }
