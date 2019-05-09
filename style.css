@@ -48,6 +48,7 @@
 
 #email, #phone {
   font-size: 40px;
+  display: none;
 }
 
 .contact  {

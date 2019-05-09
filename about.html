@@ -40,20 +40,34 @@
       <div class="contact contact_button">
         <!-- Phone -->
         <button type="button" class="btn btn-dark btn-lg" onclick="display_phone()">Phone</button>
-        <p id="phone"></p>
+        <p id="phone">916.257.6591</p>
+
         <script type="text/javascript">
           function display_phone() {
-            document.getElementById("phone").innerHTML = "720.323.6498";
+            var div = document.getElementById('phone');
+            if (div.style.display !== 'none') {
+              div.style.display = 'none';
+            }
+            else {
+              div.style.display = 'block';
+            }
           }
         </script>
+
       </div>
       <div class="contact contact_button">
         <!-- email -->
         <button type="button" class="btn btn-dark btn-lg" onclick="display_email()">Email</button>
-        <p id="email"></p>
+        <p id="email">blair.vogel@gmail.com</p>
         <script type="text/javascript">
           function display_email() {
-            document.getElementById("email").innerHTML = "noahjlvtt@gmail.com";
+            var div = document.getElementById('email');
+            if (div.style.display === 'none') {
+              div.style.display = 'block';
+            }
+            else {
+              div.style.display = 'none';
+            }
           }
         </script>
       </div>
