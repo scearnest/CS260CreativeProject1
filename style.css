@@ -46,6 +46,10 @@
 
 }
 
+#email, #phone {
+  font-size: 2em;
+}
+
 .contact  {
   flex:50%;
   flex-direction: column;
